@@ -86,6 +86,10 @@ public class ManchesterDiscGolfPublicController {
 		{
 			m.setRoundType(type);
 		}
+		else
+		{
+			m.setRoundType("none");		
+		}
 		
 		meetupRepo.save(m);		
 		return m;
